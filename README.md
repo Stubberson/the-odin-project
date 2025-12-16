@@ -1,2 +1,2 @@
-# Testing Git and GitHub within the Odin Project
-The Odin Project
+# Odin Project
+Testing Git and GitHub within the Odin Project
