@@ -21,7 +21,9 @@ body {
 .top-row .cooking-logo {
     height: 50px;
     margin: 0 0 0 16px;
+    border-radius: 8px;
     display: block;
+    transition: background-color 0.5s;
 }
 
 .top-row.recipe-page .cooking-logo:hover {
