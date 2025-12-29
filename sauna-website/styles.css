@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header-row {
+    display: flex;
+    font-family: Roboto;
+    background-color: #1f2937;
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+.header-row #home {
+    justify-self: flex-start;
+    font-size: 24px;
+    font-weight: 500;
+    color: #f9faf8;
+}
