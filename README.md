@@ -1,5 +1,5 @@
 # The Odin Project
-This is my repo for learning web development with [The Odin Project](https://www.theodinproject.com/).
+This is my repo for learning web development with [The Odin Project](https://www.theodinproject.com/). At the same time, I'm learning git and GitHub.
 
 I'll update this README file every now and then to keep track of my progress.
 
