@@ -1,1 +1,3 @@
 This was the final project of HTML and CSS foundations where I created an un-responsive sauna website. The main goal was to make it look good, functionality is something we'll learn later.
+
+![Picture-of-website](./finished-own.png)
