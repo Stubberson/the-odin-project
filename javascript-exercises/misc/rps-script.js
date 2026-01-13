@@ -5,7 +5,7 @@ const scissors = "scissors"
 let computerScore = 0
 let humanScore = 0
 
-// Create the computer's choice
+// Create the computer's "choice"
 function getComputerChoice() {
     let randomChoice = Math.random()
     console.log(randomChoice)
@@ -19,7 +19,7 @@ function getComputerChoice() {
     }
 }
 
-// Prompt the human to give a choice
+// Prompt the human for a decision
 function getHumanChoice() {
     return prompt("Rock, paper, or scissors?")
 }
@@ -39,7 +39,7 @@ function playRound(computerChoice, humanChoice) {
     }
 }
 
-// Play five rounds
+// Play five rounds and declare the winner, unless it's a tie
 function playGame() {
     for (let i = 0; i < 5; i++) {
         playRound(getComputerChoice(), getHumanChoice())
@@ -54,4 +54,5 @@ function playGame() {
     }
 }
 
+// Invoke the whole shabang!
 playGame()
