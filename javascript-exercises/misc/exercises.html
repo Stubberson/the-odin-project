@@ -1,0 +1,56 @@
+<!-- A little exercise on how to use a while loop -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1. Write a counter for even numbers until 10
+        // let i = 0
+        // while (i <= 10) {
+        //     if (i % 2 === 0) {
+        //         alert(i)
+        //     }
+        //     i++
+        // }
+
+        // 2. Write the for-loop as a while-loop
+        // for (let i = 0; i < 3; i++) {
+        //     alert( `number ${i}!` );
+        // }
+        // let i = 0;
+        // while (i < 3) {
+        //     alert(`Number ${i}!`)
+        //     i++
+        // }
+
+        // 3. Write a loop which prompts for a number greater than 100 until given or canceled
+        // let invalid = true
+
+        // while (invalid) {
+        //     let number = prompt('Enter a number greater than 100', 0)
+        //     if (number > 100 || number === null) {  // number === null when the user cancels the prompt
+        //         invalid = false
+        //     }
+        // }
+
+        // 4. Sum of tripled evens
+        const array = [1, 2, 3, 4, 5, 6, 7, 8]
+
+        function sumOfTripledEvens(array) {
+            return array
+                // Filter the array, so the following methods only conisder the filtered ones
+                .filter((num) => num % 2 === 0)
+                // Apply multiplication for each filtered item
+                .map((num) => num * 3)
+                // Sum all the filtered and multiplied items
+                .reduce((acc, curr) => acc + curr)
+        }
+
+        console.log(sumOfTripledEvens(array))
+    </script>
+</body>
+</html>
