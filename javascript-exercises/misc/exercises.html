@@ -8,7 +8,9 @@
 </head>
 <body>
     <script>
-        // --- 1. Write a counter for even numbers until 10 ---
+        // --- 1. EX
+        // Write a counter for even numbers until 10 
+        // ---
         // let i = 0
         // while (i <= 10) {
         //     if (i % 2 === 0) {
@@ -17,7 +19,9 @@
         //     i++
         // }
 
-        // --- 2. Write the for-loop as a while-loop ---
+        // --- 2. EX
+        // Write the for-loop as a while-loop 
+        // ---
         // for (let i = 0; i < 3; i++) {
         //     alert( `number ${i}!` );
         // }
@@ -27,7 +31,9 @@
         //     i++
         // }
 
-        // --- 3. Write a loop which prompts for a number greater than 100 until given or canceled ---
+        // --- 3. EX
+        // Write a loop which prompts for a number greater than 100 until given or canceled 
+        // ---
         // let invalid = true
 
         // while (invalid) {
@@ -37,7 +43,9 @@
         //     }
         // }
 
-        // --- 4. Sum of tripled evens ---
+        // --- 4. EX
+        // Sum of tripled evens 
+        // ---
         // const array = [1, 2, 3, 4, 5, 6, 7, 8]
 
         // function sumOfTripledEvens(array) {
@@ -52,7 +60,9 @@
 
         // console.log(sumOfTripledEvens(array))
 
-        // --- 5. Write a "camelize" function that changes dash-separated words like “my-short-string” into camel-cased “myShortString” ---
+        // --- 5. EX
+        // Write a "camelize" function that changes dash-separated words like “my-short-string” into camel-cased “myShortString” 
+        // ---
         // const example1 = 'my-short-string'
         // const example2 = '-another-String'
         // const example3 = 'This-too'
@@ -80,8 +90,10 @@
         // console.log(camelize(example3))
         // console.log(camelize(example4))
         
-        // --- 6. Write a function filterRange(arr, a, b) that gets an array arr, looks for elements with values higher or equal to a 
-        // and lower or equal to b and return a result as an array. The function should not modify the array. It should return the new array.
+        // --- 6. EX
+        // Write a function filterRange(arr, a, b) that gets an array arr, looks for elements with values higher or equal to a 
+        // and lower or equal to b and return a result as an array. The function should not modify the array. It should return the new array. 
+        // ---
         // const example1 = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
         // function filterRange (arr, a, b) {
@@ -91,18 +103,56 @@
 
         // console.log(filterRange(example1, 2, 6), example1)
 
-        // --- 7. Write a function filterRangeInPlace(arr, a, b) that gets an array arr and removes from it all values except those that are between a and b. The test is: a ≤ arr[i] ≤ b.
-        // The function should only modify the array. It should not return anything.
-        const example1 = [5, 3, 8, 1]
-        function filterRangeInPlace (arr, a, b) {
-            arr.forEach(num => {
-                if (num < a || num > b) {
-                    arr.splice(arr.indexOf(num), 1)
+        // --- 7. EX
+        // Write a function filterRangeInPlace(arr, a, b) that gets an array arr and removes from it all values except those that are between a and b. The test is: a ≤ arr[i] ≤ b.
+        // The function should only modify the array. It should not return anything. 
+        // ---
+        // const example1 = [5, 3, 8, 1]
+        // function filterRangeInPlace (arr, a, b) {
+        //     arr.forEach(num => {
+        //         if (num < a || num > b) {
+        //             arr.splice(arr.indexOf(num), 1)
+        //         }
+        //     })
+        // }
+        // filterRangeInPlace(example1, 1, 4)
+        // console.log(example1)
+
+        // --- 8. EX
+        // Sort in decreasing order 
+        // ---
+        // let arr = [5, 2, 1, -10, 8]
+
+        // // Ascending compareFn: (a, b) => a - b: A negative value indicates that "a" should come before "b"
+        // arr.sort((a, b) => b - a)
+
+        // console.log(arr)
+
+        // --- 9. EX
+        // Write the function shuffle(array) that shuffles (randomly reorders) elements of the array.
+        // Multiple runs of shuffle may lead to different orders of elements.
+        // let arr = [1, 2, 3]
+        // // This is the so-called Fisher-Yates algorithm using "destructuring assignment". I looked it up, couldn't figure it out on my own.
+        // function shuffle(array) {
+        //     for (let i = array.length - 1; i > 0; i--) {
+        //         let j = Math.floor(Math.random() * (i + 1))
+        //         [array[i], array[j]] = [array[j], array[i]]
+        //     }
+        // }
+
+        // --- 10. EX
+        // Create a function unique(arr) that should return an array with unique items of arr.
+        let arr = ["Hare", "Krishna", "Hare", "Krishna", "Krishna", "Krishna", "Hare", "Hare", ":-O"]
+
+        function unique(arr) {
+            let newArr = []
+            for (let i = 0; i < arr.length; i++) {                
+                if (newArr.includes(arr[i]) === false) {
+                    newArr.push(arr[i])
                 }
-            })
+            }
+            return newArr
         }
-        filterRangeInPlace(example1, 1, 4)
-        console.log(example1)
     </script>
 </body>
 </html>
